@@ -7,5 +7,5 @@ class User < ApplicationRecord
     
   has_many :shared_artworks,
     through: :artwork_shares,
-    class_name: :User
+    source: :
 end
